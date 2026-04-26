@@ -38,7 +38,7 @@ namespace RazorPagesComic.Pages_Comics
                                             select c.Publisher;
             // </snippet_search_linqQuery>
 
-            var Comic = from c in _context.Comic
+            var comics = from c in _context.Comic
                         select c;
 
             if (!string.IsNullOrEmpty(SearchString))
